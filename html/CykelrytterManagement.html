@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour De France</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/CykelrytterManagement.js" defer></script>
+</head>
+<body class="center">
+
+<h2>Create Cykelrytter</h2>
+<form id="create-form">
+    <input type="text" id="create-navn" placeholder="Name">
+    <input type="number" id="create-alder" placeholder="Age">
+    <input type="number" id="create-samletTid" placeholder="Total Time">
+    <input type="number" id="create-bjergpoint" placeholder="Mountain Points">
+    <input type="number" id="create-spurtpoint" placeholder="Sprint Points">
+    <input type="number" id="create-holdId" placeholder="Hold Id">
+    <button type="submit">Create</button>
+</form>
+
+
+<h1>Cykelryttere</h1>
+<table id="cykelrytter-list">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Total Time</th>
+        <th>Mountain Points</th>
+        <th>Sprint Points</th>
+        <th>Actions</th>
+        <th>CykelHold</th>
+    </tr>
+</table>
+
+<div id="updateModal">
+    <form id="updateForm">
+        <span id="close">&times;</span>
+        <label for="navn">Name:</label><br>
+        <input type="text" id="navn" name="navn"><br>
+        <label for="alder">Age:</label><br>
+        <input type="number" id="alder" name="alder"><br>
+        <label for="samletTid">Total Time:</label><br>
+        <input type="number" id="samletTid" name="samletTid"><br>
+        <label for="bjergpoint">Mountain Points:</label><br>
+        <input type="number" id="bjergpoint" name="bjergpoint"><br>
+        <label for="spurtpoint">Sprint Points:</label><br>
+        <input type="number" id="spurtpoint" name="spurtpoint"><br>
+        <label for="holdId">Hold Id</label><br>
+        <input type="number" id="holdId" name="holdId"><br>
+        <input type="hidden" id="updateId">
+        <input type="submit" value="Update">
+    </form>
+</div>
+
+</body>
+</html>
